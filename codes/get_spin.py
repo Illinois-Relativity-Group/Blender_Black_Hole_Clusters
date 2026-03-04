@@ -11,7 +11,7 @@ def combine_spin_data(data_dir, output_csv):
     required_times = np.arange(start_time, end_time + step, step)
     output_data = pd.DataFrame({"time": required_times})
 
-    for file_num in range(1, 47):
+    for file_num in range(1, 100):
         file_name = f"stats_AH{file_num}.txt"
         file_path = os.path.join(data_dir, file_name)
 
